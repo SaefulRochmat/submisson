@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="../Submission/asset/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="head_bar">
+      <h1 class="head_bar__title">Bookshelf Apps</h1>
+    </header>
+    <!--END HEADER-->
+
+    <!--MAIN-->
+      <main>
+        <!--FORM-->
+        <section class="input_section">
+          <h2>Masukkan Buku Baru</h2>
+          <form id="form">
+            <div class="input">
+              <label>Judul</label>
+              <input id="judul_buku" type="text" required>
+            </div>
+            <div class="input">
+              <label>Penulis</label>
+              <input id="penulis_buku" type="text" required>
+            </div>
+            <div class="input">
+              <label>Tahun</label>
+              <input id="tahun_terbit" type="number" required>
+            </div>
+            <div class="input_inline">
+              <label>Selesai dibaca</label>
+              <input id="isComplete" type="checkbox">
+            </div>
+            <button id="simpan" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+          </form>
+        </section>
+        <!--END FORM-->
+
+          <section class="book_shelf">
+            <h2>Belum selesai dibaca</h2>          
+            <div id="uncomplete-read" class="book_list">           
+            </div>
+          </section>
+       
+          <section class="book_shelf">
+            <h2>Selesai dibaca</h2>        
+            <div id="complete-read" class="book_list">     
+            </div>
+          </section>
+      </main>
+      <!--END MAIN-->
+
+      <!--MAIN JS-->
+      <script src="../Submission/asset/main.js"></script>
+ 
+</body>
+</html>
